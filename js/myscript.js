@@ -39,6 +39,7 @@ $(function () {
     trackNames = [
       "He's lo he's bae :))",
       "I❤U",
+      "Nghe đi cho chill <3",
       "my bae <3"
     ],
     albumArtworks = ["_1", "_2","_3"],
