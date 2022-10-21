@@ -46,7 +46,7 @@ $(function () {
     trackUrl = [
       "music/speedup.mp3",
       "music/[Speed Up] Tình Ka Ngọt Ngào.....mp3",
-      "musis/Speed up tiếp.mp3",
+      "musis/Speed.mp3",
       "music/lofi1.mp3"
 
     ],
