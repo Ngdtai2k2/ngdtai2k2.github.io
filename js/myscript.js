@@ -34,7 +34,9 @@ $(function () {
     tFlag = false,
     albums = [
       "List Speed Up",
-      "Playlist lofi music"
+      "List Speed Up",
+      "Playlist lofi music",
+      "List Speed Up",
     ],
     trackNames = [
       "He's lo he's bae :))",
