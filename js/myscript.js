@@ -49,7 +49,7 @@ $(function () {
       "music/speedup.mp3",
       "music/[Speed Up] Tình Ka Ngọt Ngào.....mp3",
       "music/lofi1.mp3",
-      "musis/Speed.mp3"
+      "musis/list.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
