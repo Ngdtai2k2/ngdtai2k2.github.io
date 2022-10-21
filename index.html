@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Music Player</title>
+	<meta name="viewport"
+		content="user-scalable=no, initial-scale=1, maximum-scale=0.5, minimum-scale=0.5, width=device-width" />
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/spin.css">
+</head>
+<body>
+	<video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+		<source src="image/background.mp4" type="video/webm"/>
+	</video>
+	<body class="preloading">
+		<div class="loader">
+			<span class="">
+				<div class="loader_1">
+					<div class="loader-inner">
+					  <div class="loader-line-wrap">
+						<div class="loader-line"></div>
+					  </div>
+					  <div class="loader-line-wrap">
+						<div class="loader-line"></div>
+					  </div>
+					  <div class="loader-line-wrap">
+						<div class="loader-line"></div>
+					  </div>
+					  <div class="loader-line-wrap">
+						<div class="loader-line"></div>
+					  </div>
+					  <div class="loader-line-wrap">
+						<div class="loader-line"></div>
+					  </div>
+					</div>
+				  </div>
+			</span>
+		</div>
+		<div class="content">
+			<div id="app-cover">
+				<div id="bg-layer"></div>
+				<div id="player">
+				  <div id="player-track">
+					<div id="album-name"></div>
+					<div id="track-name"></div>
+					<div id="track-time">
+					  <div id="current-time"></div>
+					  <div id="track-length"></div>
+					</div>
+					<div id="s-area">
+					  <div id="ins-time"></div>
+					  <div id="s-hover"></div>
+					  <div id="seek-bar"></div>
+					</div>
+				  </div>
+				  <div id="player-content">
+					<div id="album-art">
+					  <img src="image/background.gif" class="active" id="_1">
+					  <img src="image/lofi-girl.gif" id="_2">
+					</div>
+					<div id="player-controls">
+					  <div class="control">
+						<div class="button" id="play-previous">
+						  <i class="fas fa-backward"></i>
+						</div>
+					  </div>
+					  <div class="control">
+						<div class="button" id="play-pause-button">
+						  <i class="fas fa-play"></i>
+						</div>
+					  </div>
+					  <div class="control">
+						<div class="button" id="play-next">
+						  <i class="fas fa-forward"></i>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<!-- partial -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script src="js/myscript.js"></script>
+
+	</body>
+
+</html>
