@@ -42,7 +42,7 @@ $(function () {
       "Nghe đi cho chill <3",
       "my bae <3"
     ],
-    albumArtworks = ["_1", "_2","_3"],
+    albumArtworks = ["_1", "_2","_3","_4"],
     trackUrl = [
       "music/speedup.mp3",
       "music/[Speed Up] Tình Ka Ngọt Ngào.....mp3",
