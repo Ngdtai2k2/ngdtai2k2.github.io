@@ -37,13 +37,16 @@ $(function () {
       "Playlist lofi music"
     ],
     trackNames = [
-      "❤❤❤",
-      "❤❤❤"
+      "He's lo he's bae :))",
+      "I❤U",
+      "my bae <3"
     ],
-    albumArtworks = ["_1", "_2"],
+    albumArtworks = ["_1", "_2","_3"],
     trackUrl = [
       "music/speedup.mp3",
+      "music/[Speed Up] Tình Ka Ngọt Ngào.....mp3",
       "music/lofi1.mp3"
+
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
