@@ -162,7 +162,7 @@ $(function () {
     clearInterval(buffInterval);
     buffInterval = setInterval(function () {
       if (nTime == 0 || bTime - nTime > 1000) albumArt.addClass("buffering");
-      else albumArt.removeClass("buffering");
+      else albumArt.removeClass("Loading...");
 
       bTime = new Date();
       bTime = bTime.getTime();
