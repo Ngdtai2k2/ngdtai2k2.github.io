@@ -42,6 +42,12 @@ const app = {
       image: "image/frog.gif"
     },
     {
+      name: "Head In The Clouds",
+      singer: "HayD",
+      path: "music/Hitc.mp3",
+      image: "image/cloud.gif"
+    },
+    {
       name: "Vietnamese speed up playlist",
       singer: "nhieu ca si :v",
       path: "music/vnspeedup.mp3",
