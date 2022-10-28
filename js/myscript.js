@@ -30,6 +30,18 @@ const app = {
     path: "music/lofidog.mp3",
     image: "image/dog.gif"},
     {
+      name: "Demons x Jar Of Heart",
+      singer: "...<3",
+      path: "music/DeJ.mp3",
+      image: "image/bo.gif"
+    },
+    {
+      name: "Jar of Hearts (remix lofi)",
+      singer: "Fasetya - Dangling ",
+      path: "music/JoH.mp3",
+      image: "image/frog.gif"
+    },
+    {
       name: "Vietnamese speed up playlist",
       singer: "nhieu ca si :v",
       path: "music/vnspeedup.mp3",
@@ -50,7 +62,7 @@ const app = {
     {
       name: "lofi gi do",
       singer: "...",
-      path:"music/lofi1.mp3",
+      path:"music/lofichill.mp3",
       image: "image/list.gif"
     }
   ],
