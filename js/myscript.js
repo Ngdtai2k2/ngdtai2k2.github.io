@@ -36,6 +36,12 @@ const app = {
       image: "image/bo.gif"
     },
     {
+      name: "To the moon",
+      singer: "hooligan.",
+      path: "music/TTM.mp3",
+      image: "image/moon.gif"
+    },
+    {
       name: "Jar of Hearts (remix lofi)",
       singer: "Fasetya - Dangling ",
       path: "music/JoH.mp3",
