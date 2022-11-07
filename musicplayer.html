@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello bae <3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<div class="player">
+		<!-- Dashboard -->
+		<div class="card-body">
+			<div class="dashboard">
+				<!-- Header -->
+				<header>
+					<h4>Now playing:</h4>
+					<h2>String 57th & 9th</h2>
+				</header>
+
+				<!-- CD -->
+				<div class="cd">
+					<div class="cd-thumb">
+					</div>
+				</div>
+
+				<!-- Control -->
+				<div class="control">
+					<div class="btn btn-repeat zoom">
+						<i class="fas fa-redo"></i>
+					</div>
+					<div class="btn btn-prev zoom">
+						<i class="fas fa-step-backward"></i>
+					</div>
+					<div class="btn btn-toggle-play zoom">
+						<i class="fas fa-pause icon-pause"></i>
+						<i class="fas fa-play icon-play"></i>
+					</div>
+					<div class="btn btn-next zoom">
+						<i class="fas fa-step-forward"></i>
+					</div>
+					<div class="btn btn-random zoom">
+						<i class="fas fa-random"></i>
+					</div>
+				</div>
+				<input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+				<audio id="audio" src=""></audio>				
+			</div>
+		</div>
+		<!-- Playlist -->
+		<div class="list">
+			<div class="playlist">
+			</div>
+		</div>
+	</div>
+	<script src="js/click.js"></script>
+	<script src="js/myscript.js"></script>
+</body>
+</html>
