@@ -191,7 +191,7 @@
 
     var settings = {
       particles: {
-        length: 550, // maximum amount of particles
+        length: 450, // maximum amount of particles
         duration: 3, // particle duration in sec
         velocity: 70, // particle velocity in pixels/sec
         effect: -0.5, // play with this for a nice effect
