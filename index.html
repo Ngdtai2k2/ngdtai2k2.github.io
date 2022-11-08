@@ -1,38 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-    <title>Hello bae <3</title>
-    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="style/heart.css">
-  </head>
+    <meta charset="utf-8"/>
+    <title>luv you bae</title>
+        <link rel="stylesheet" href="style/typing.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
 
-  <body>
-    <!-- html -->
-    <!-- <div> -->
-    <div class="container2">
-      <div class="content">
-        <canvas id="universe"></canvas>
-      </div>
-    </div>
-    <!-- </div> -->
-    <div class="title">
-      <!--html -->
-      <br><br>
-      <h3 class="STARDUST1">&nbsp;&nbsp;</h3>
-      <h1 class="STARDUST2">Hey bae <3</h1>
-      <h3 class="STARDUST3" title="music" onclick="location.href='musicplayer.html';" >L O V E <strong>❤</strong> Y O U</h3>
-      <!-- html -->
-      <img class="img" src="image/bae.png" alt=""/>
-      <canvas id="pinkboard"> </canvas>
-    </div>
-    
-    <script src="js/click.js"></script>
-	<script src="js/heart.js"></script>
-  </body>
+<body>
+    <div id="main_wrapper">
+        <div id="header" onclick="location.href='heart.html';">
+            <a>Bấm vô đây đi :>></a>
+        </div>
+        <div id="main_content">
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+</body>
+<script src="js/click.js"></script>
+<script>
+    const elts = {
+        text1: document.getElementById("text1"),
+        text2: document.getElementById("text2")
+    };
 
-</html>
+    const texts = [
+        "Hé sờ lô he sờ bae :)))",
+        "08/05/2022",
+        "08/11/2022",
+        "6 tháng",
+        "Thời gian không quá dài",
+        "Nhưng đủ để a biết rằng",
+        "'You Are'",
+        "'My Love'",
+        "❤",
+    ];
+
+    const morphTime = 1;
+    const cooldownTime = 0.35;
+
+    let textIndex = texts.length - 1;
+    let time = new Date();
+    let morph = 0;
+    let cooldown = cooldownTime;
+
+    elts.text1.textContent = texts[textIndex % texts.length];
+    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+    function doMorph() {
+        morph -= cooldown;
+        cooldown = 0;
+
+        let fraction = morph / morphTime;
+
+        if (fraction > 1) {
+            cooldown = cooldownTime;
+            fraction = 1;
+        }
+
+        setMorph(fraction);
+    }
+
+    function setMorph(fraction) {
+        elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        fraction = 1 - fraction;
+        elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        elts.text1.textContent = texts[textIndex % texts.length];
+        elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+    }
+
+    function doCooldown() {
+        morph = 0;
+
+        elts.text2.style.filter = "";
+        elts.text2.style.opacity = "100%";
+
+        elts.text1.style.filter = "";
+        elts.text1.style.opacity = "0%";
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        let newTime = new Date();
+        let shouldIncrementIndex = cooldown > 0;
+        let dt = (newTime - time) / 1000;
+        time = newTime;
+
+        cooldown -= dt;
+
+        if (cooldown <= 0) {
+            if (shouldIncrementIndex) {
+                textIndex++;
+            }
+
+            doMorph();
+        } else {
+            doCooldown();
+        }
+    }
+
+    animate();
+</script>
+<footer></footer>
