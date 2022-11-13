@@ -37,21 +37,29 @@ body, button {
 	grid-column: 1 / 6;
 }
 .progress-clock__time-date {
-	font-size: 10px;
+	font-size: 13.5px;
 	line-height: 1.33;
+	font-weight: bold;
+	color: aliceblue;
 }
 .progress-clock__time-digit,
 .progress-clock__time-colon {
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 400;
 	grid-row: 2;
+	font-weight: bold;
+	color: aliceblue;
 }
 .progress-clock__time-colon {
 	line-height: 1.275;
+	font-weight: bold;
+	color: aliceblue;
 }
 .progress-clock__time-ampm {
 	cursor: default;
 	grid-row: 3;
+	font-weight: bold;
+	color: aliceblue;
 }
 .progress-clock__rings {
 	display: block;
@@ -83,19 +91,23 @@ body, button {
 }
 [data-group="d"]:focus,
 [data-group="d"]:hover {
-	color: hsl(333,90%,55%);
+	font-weight: bolder;
+	transform: scale(1.1);
 }
 [data-group="h"]:focus,
 [data-group="h"]:hover {
-	color: hsl(33,90%,55%);
+	font-weight: bolder;
+	transform: scale(1.1);
 }
 [data-group="m"]:focus,
 [data-group="m"]:hover {
-	color: hsl(213,90%,55%);
+	font-weight: bolder;
+	transform: scale(1.1);
 }
 [data-group="s"]:focus,
 [data-group="s"]:hover {
-	color: rgb(240, 125, 234);
+	font-weight: bolder;
+	transform: scale(1.1);
 }
 [data-group]:focus ~ .progress-clock__rings [data-units],
 [data-group]:hover ~ .progress-clock__rings [data-units] {
