@@ -1,5 +1,6 @@
 .gallary{
-  margin-top: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 body {
   width: 100%;
@@ -25,86 +26,4 @@ img {
 }
 .zoom:hover {
   transform: scale(1.2);
-}
-/*Ipad ngang(1024 x 768)*/
-@media screen and (max-width: 1024px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.2);
-  }
-  .gallary{
-    margin-top: 500px;
-  }
-}
-/*Ipad dọc(768 x 1024)*/
-@media screen and (max-width: 768px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.2);
-  }
-  .gallary{
-    margin-top: 1400px;
-  }
-}
-@media screen and (max-width: 1030px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.2);
-  }
-  .gallary{
-    margin-top: 1400px;
-  }
-}
-@media screen and (max-width: 1300px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.15);
-  }
-  .gallary{
-    margin-top: 2250px;
-  }
-}
-/*Tablet nhỏ(480 x 640)*/
-@media screen and (max-width: 480px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.2);
-  }
-  .gallary{
-    margin-top: 3950px;
-  }
-}
-/*Iphone(480 x 640)*/
-@media screen and (max-width: 320px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.5);
-  }
-  .gallary{
-    margin-top: 500px;
-  }
-}
-/*Smart phone nhỏ*/
-@media screen and (max-width: 240px){
-  .zoom {
-    transition: transform .2s;
-  }
-  .zoom:hover {
-    transform: scale(1.2);
-  }
-  .gallary{
-    margin-top: 1500px;
-  }
 }
