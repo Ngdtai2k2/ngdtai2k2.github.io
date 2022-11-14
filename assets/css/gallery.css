@@ -1,0 +1,94 @@
+.gallary{
+  margin-top: 200px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(253, 221, 221);
+  background-size: cover;
+}
+
+.flex-column {
+  max-width: 260px;
+}
+
+img {
+  margin: 5px;
+}
+
+.scale {
+  transform: scaleY(1.05);
+  padding-top: 5px; 
+}
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+@media (max-width: 1920px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.15);
+  }
+  .gallary{
+    margin-top: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .gallary{
+    margin-top: 1350px;
+  }
+}
+@media (max-width: 500px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .gallary{
+    margin-top: 1850px;
+  }
+}
+@media (max-width: 400px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .gallary{
+    margin-top: 1000px;
+  }
+}
+@media (max-width: 600px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .gallary{
+    margin-top: 1350px;
+  }
+}
+@media (max-width: 550px) {
+  .zoom {
+    transition: transform .2s;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .gallary{
+    margin-top: 2900px;
+  }
+}
