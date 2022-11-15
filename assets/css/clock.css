@@ -40,26 +40,26 @@ body, button {
 	font-size: 13.5px;
 	line-height: 1.33;
 	font-weight: bold;
-	color: aliceblue;
+	color: rgb(0, 0, 0);
 }
 .progress-clock__time-digit,
 .progress-clock__time-colon {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
 	grid-row: 2;
 	font-weight: bold;
-	color: aliceblue;
+	color: rgb(0, 0, 0);
 }
 .progress-clock__time-colon {
 	line-height: 1.275;
-	font-weight: bold;
-	color: aliceblue;
+	font-weight: 10;
+	color: rgb(0, 0, 0);
 }
 .progress-clock__time-ampm {
 	cursor: default;
 	grid-row: 3;
 	font-weight: bold;
-	color: aliceblue;
+	color: rgb(0, 0, 0);
 }
 .progress-clock__rings {
 	display: block;

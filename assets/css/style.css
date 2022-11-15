@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+
 body {
   font-family: 'Lobster', cursive;
   color: #444444;
@@ -13,6 +14,7 @@ a:hover {
   color: #ec5353;
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -155,7 +157,8 @@ h6 {
 }
 
 .header-social-links a {
-  color: #ff4444;;
+  color: #ff4444;
+  ;
   padding-left: 6px;
   display: inline-block;
   transform-origin: right;
@@ -220,7 +223,8 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #ff8c8c;;
+  background-color: #ff8c8c;
+  ;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -422,7 +426,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background.jpg") top right;
+  background: url("../img/background.gif") center;
   background-size: cover;
 }
 
@@ -442,11 +446,11 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fd5f5f;
+  color: #ffcece;
 }
 
 #hero h2 {
-  color: #fd5f5f;
+  color: #ff0404c9;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -1428,7 +1432,7 @@ a {
   text-decoration: none;
   color: rgb(255, 82, 82);
   opacity: 0.7;
-  transition:  scale(1.5);
+  transition: scale(1.5);
 }
 
 a:hover {
@@ -1454,7 +1458,7 @@ a:hover {
   cursor: pointer;
   margin: 20px;
   height: 55px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
 
@@ -1474,7 +1478,8 @@ a:hover {
 .btn-hover:focus {
   outline: none;
 }
+
 .btn-hover.color-10 {
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f55e96 , #f7341a);
-box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f55e96, #f7341a);
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }

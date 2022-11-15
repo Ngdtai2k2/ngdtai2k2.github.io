@@ -1,0 +1,192 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Indie Flower', cursive;
+}
+body,html{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+  background:beige;
+}
+
+
+@keyframes text{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes heart{
+  0%{
+    opacity:1;
+    transform:scale(1,1);
+  }
+  10%{
+    transform:scale(1.4,1.4);
+  }
+  30%{
+    transform:scale(1,1);
+  }
+  75%{
+    transform:scale(1.2,1.2);
+  }
+  100%,90%{
+    opacity:1;
+    transform:scale(1,1);
+  }
+}
+h1 span,.heart-svg-container{
+  opacity:0;
+  animation-name: text;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+.heart-svg-container{
+  opacity:1;
+  height:300px;
+  width:300px;
+  animation-name: heart;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+  overflow:hidden;
+}
+.heart-beat-svg-container{
+  position:absolute;
+  width: 100%;
+  height:160px;
+  background:rgba(0,0,0,0.1);
+}
+
+.heart-svg{
+  transform:scale(0.5,0.5);
+  position:relative;
+  top:-150px;
+  left:-100px;
+}
+.heart-beat-svg{
+  height:100%;
+}
+.heart-g{
+  fill:#d40000;
+}
+.heart-circle{
+  fill:url(#grad1);
+}
+
+@keyframes heart-path{
+  0%{
+    stroke-dasharray:0px 300px;
+    fill-opacity:0;
+  }
+  70%{
+    fill-opacity:0;
+  }
+  100%{
+    stroke-dasharray:1250px 1250px;
+    fill-opacity:1;
+  }
+}
+.heart-path{
+  fill:url(#grad2);
+  fill-opacity:0;
+  stroke:url(#grad2);
+  stroke-opacity:1;
+  stroke-width:5px;
+  stroke-dasharray:0px 500px;
+  stroke-dashoffset:0px;
+  animation-name: heart-path;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+.heart-beat-path{
+  fill:none;
+  fill-opacity:1;
+  stroke:red;
+  stroke-width:3px;
+
+}
+</style>
+<div class="heart-text">
+    <h1><span>I</span> <span>Love</span> <span>You</span> <span><i class="fas fa-kiss-wink-heart"></i></span></h1>
+  </div>
+  <div class="heart-svg-container">
+    <svg class="heart-svg" height="500" width="500">
+      <g class="heart-g">
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="80%" r="90%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#d40000;" />
+            <stop offset="70%" style="stop-color:#d40000;" />
+            <stop offset="100%" style="stop-color:#ffffff;" />
+          </radialGradient>
+          <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#ff6666;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#d40000;stop-opacity:1" />
+      </linearGradient>
+        </defs>
+  <!--       <rect class="heart-rect" height="100" width="100"/>
+        <circle class="heart-circle1 heart-circle"></circle>
+        <circle class="heart-circle2 heart-circle"></circle> -->
+        
+        <path class="heart-path"
+          d="
+            m250,500
+            Q50,375 50,250
+            Q50,187.5 117,152
+            Q180.5,125 250,185
+            Q319.5,125 383,152
+            Q450,187.5 450,250
+            Q450,375 250,500
+            z
+          "
+    />
+        
+      </g>
+    </svg>
+  </div>
+  <script>
+    var svg=document.getElementsByClassName("heart-svg")[0];
+var rect=document.getElementsByClassName("heart-rect")[0];
+var g=document.getElementsByClassName("heart-g")[0];
+var circle1=document.getElementsByClassName("heart-circle1")[0];
+var circle2=document.getElementsByClassName("heart-circle2")[0];
+
+var svgWidth=svg.getAttribute("width");
+var svgHeight=svg.getAttribute("height");
+
+var rectWidth=rect.getAttribute("width");
+var rectHeight=rect.getAttribute("height");
+
+// var gWidth=g.getBoundingClientRect().width;
+// var gHeight=g.getBoundingClientRect().height;
+//kjgfjhfjhfhgfhgf
+
+rect.setAttribute("x", 0);
+rect.setAttribute("y", 50);
+
+circle1.setAttribute("r", rectWidth/2);
+circle2.setAttribute("r", rectWidth/2);
+
+circle1.setAttribute("cx", parseInt(rect.getAttribute("x")) + rectWidth/2);
+circle2.setAttribute("cx", parseInt(rect.getAttribute("x")) + rectWidth/1);
+
+circle1.setAttribute("cy", parseInt(rect.getAttribute("y")));
+circle2.setAttribute("cy", parseInt(rect.getAttribute("y")) + rectHeight/2);
+
+// svg.setAttribute("width", g.getBoundingClientRect().width);
+// svg.setAttribute("height", g.getBoundingClientRect().height);
+  </script>
