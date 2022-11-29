@@ -40,7 +40,7 @@ body, button {
 	font-size: 13.5px;
 	line-height: 1.33;
 	font-weight: bold;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 .progress-clock__time-digit,
 .progress-clock__time-colon {
@@ -48,18 +48,18 @@ body, button {
 	font-weight: 400;
 	grid-row: 2;
 	font-weight: bold;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 .progress-clock__time-colon {
 	line-height: 1.275;
 	font-weight: 10;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 .progress-clock__time-ampm {
 	cursor: default;
 	grid-row: 3;
 	font-weight: bold;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 .progress-clock__rings {
 	display: block;

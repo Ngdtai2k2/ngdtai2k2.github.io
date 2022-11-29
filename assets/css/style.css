@@ -87,12 +87,13 @@ h6 {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
+  display: inline-block;
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 996;
+  z-index: 999;
   background: #ff0808;
   width: 40px;
   height: 40px;
@@ -179,7 +180,6 @@ h6 {
 */
 .navbar {
   padding: 0;
-
 }
 
 .navbar ul {
@@ -213,7 +213,6 @@ h6 {
 .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
-  margin-left: 5px;
 }
 
 .navbar>ul>li>a:before {
@@ -224,7 +223,6 @@ h6 {
   bottom: -5px;
   left: 0;
   background-color: #ff8c8c;
-  ;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -245,7 +243,6 @@ h6 {
 }
 
 .navbar .dropdown ul {
-  display: block;
   position: absolute;
   left: 14px;
   top: calc(100% + 30px);

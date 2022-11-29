@@ -102,18 +102,20 @@ anni {
 
 
 footer {
-      text-shadow: 0px 8px 6px rgba(255, 255, 255, 0.5);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       font-family: 'Lobster', cursive;
-      color: #ff5b5b;
       font-weight: 9000;
       grid-column: span 3;
       text-align: center;
       font-size: 1.6rem;
       font-weight: lighter;
       margin-top: 1.2rem;
+      grid-column: span 3;
+      text-align: center;
+      color: #ff0000;
+      text-shadow: 0 8.36px 8px #fd8383, 0 -2px 1px rgb(247, 128, 128);text-shadow: 0 8.36px 8px #fd8383, 0 -2px 1px rgb(247, 128, 128);
 }
 
 #music {
