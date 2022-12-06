@@ -8,14 +8,18 @@
 #slideshow {
 	margin: 0 auto;
 	padding-top: 50px;
-	height: 600px;
+	height: 575px;
 	width: 100%;
 	background: rgb(255, 224, 224);
     background-repeat: no-repeat;
     background-size: cover;
   
 }
-
+footer{
+	background: rgb(255, 224, 224);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .entire-content {
 	margin: auto;
 	width: 190px;
