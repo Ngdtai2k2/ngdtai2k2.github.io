@@ -2,232 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Album</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <title>Album</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ionicons.min.css">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; color: #ff9d9d;"></div>
+
+<!--NAV-->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">STRAWBERRY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+      aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li class="nav-item"><a href="music.html" class="nav-link">Music</a></li>
+        <li class="nav-item active"><a href="gallery.html" class="nav-link">Album</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">More</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="firework.html">Pháo hoa</a>
+            <a class="dropdown-item" href="">Noel</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <!-- Spinner End -->
+  </div>
+</nav>
+<!-- END nav -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0" style="color: #ff9d9d ;">DESTINY</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="music.html" class="nav-item nav-link">Nhạc nè!</a>
-                <a href="countday.html" class="nav-item nav-link">Love Days</a>
-                <a href="gallery.html" class="nav-item nav-link active">Album</a>
-                <a href="heart_beat.html" class="nav-item nav-link">Trái tim <3</a>
-                <a href="tree-christmas.html" class="nav-item nav-link">Noel nè :></a>
-                <a href="firework.html" class="nav-item nav-link">Pháo hoa nè :></a>
-            </div>
-            <div class="border-start ps-4 d-none d-lg-block">
-                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
-            </div>
+  <div class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Ở đây có ảnh nè :></h1>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Ở đây có ảnh nè :></h1>
-        </div>
+      </div>
     </div>
-    <hr>
-    <!-- Page Header End -->
+  </div>
 
-    <!-- Gallery Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-0">
-                <!--1-->
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="row g-0">
-                        <div class="col-12">
-                            <a class="d-block" href="img/14.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/14.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/2.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/9.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/9.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/7.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/7.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--2-->
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="row g-0">
-                        <div class="col-12">
-                            <a class="d-block" href="img/3.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/a.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/a.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/10.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/10.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/13.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/13.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/1.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/5.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/5.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--3-->
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-0">
-                        <div class="col-12">
-                            <a class="d-block" href="img/c.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/c.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/6.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/6.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/0.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/0.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/12.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/12.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/b.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/b.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--4-->
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="row g-0">
-                        <div class="col-12">
-                            <a class="d-block" href="img/video.mp4" data-lightbox="Videos">
-                                <video class="img-fluid" autoplay muted loop>
-                                    <source src="img/video.mp4" alt="">
-                                </video>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/8.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/8.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/11.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/11.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/15.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/15.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a class="d-block" href="img/4.jpg" data-lightbox="gallery">
-                                <img class="img-fluid" src="img/4.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="ftco-section-music ftco-animate">
+    <div class="container" data-scrollax-parent="true">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
         </div>
+      </div>
     </div>
-    <hr>
-    <!-- Gallery End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+  </section>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cursor.js"></script>
+
 </body>
 
 </html>
