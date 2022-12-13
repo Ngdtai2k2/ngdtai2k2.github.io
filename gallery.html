@@ -34,10 +34,10 @@
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">STRAWBERRY</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+      <a class=" btn navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
         aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
-      </button>
+      </a>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
@@ -56,19 +56,27 @@
       </div>
     </div>
   </nav>
+  <audio id="track">
+    <source src="songs/beat.mp3" type="audio/mpeg" />
+  </audio>
   <!-- END nav -->
   <div class="hero-wrap js-fullheight">
     <div class="overlay"></div>
     <div id="particles-js"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-        <div class="ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-          <div class="text-1 p-4 d-flex align-items-center">
-            <!--typing-->
-            <div style="text-align: center; color:white; font-family: 'Pacifico', cursive;" class="typing animate">
-            </div>
-          </div>
+        <div class="col-12 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <button id="play-pause" style="margin:100px auto ;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span style="font-family: 'Pacifico', cursive; font-size: 23.5px;">Click 💝</span>
+          </button>
+          <p style="font-family: 'Pacifico', cursive;" class="fs-4 text-center text-white wow fadeInUp"
+            data-wow-delay="0.4s">“Can I say I love you today? If not, can I ask you again tomorrow? And the day after tomorrow?<br>And the day after that? Coz I’ll be loving you every single day of my life?”</p>
         </div>
+        <!-- end-->
       </div>
     </div>
   </div>
@@ -120,6 +128,33 @@
       })
     });
   </script>
+  <script>
+    var track = document.getElementById('track');
+
+    var controlBtn = document.getElementById('play-pause');
+
+    function playPause() {
+      if (track.paused) {
+        track.play();
+        //controlBtn.textContent = "Pause";
+        controlBtn.className = "pause";
+      } else {
+        track.pause();
+        //controlBtn.textContent = "Play";
+        controlBtn.className = "play";
+      }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function () {
+      controlBtn.className = "play";
+    });
+
+  </script>
 </body>
+<footer>
+  <p style="text-align: center;">Copyright ©2022 All rights reserved | Idea for template from Colorlib <br> @Ngdtai2k2 </p>
+<!-- / class fRight --></div>
+</footer>
 
 </html>
