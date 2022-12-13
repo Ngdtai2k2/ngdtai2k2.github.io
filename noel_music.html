@@ -1,0 +1,89 @@
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161616;
+    color: #ff7373;
+    font-family: sans-serif;
+    }
+    label {
+    display: inline-block;
+    background-color: #161616;
+    padding: 16px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ff7373;
+    text-align: center;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+    .btn {
+    background-color: #161616;
+    border-radius: 10px;
+    color: #ff7373;
+    border: 1px solid #da3939;
+    padding: 16px;
+    width: 300px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    }
+    .separator {
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    margin: 16px 0px;
+    color: #ff7373;
+    }
+    .title {
+    color: #ff7373;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    }
+    .text-loading {
+    font-size: 2rem;
+    }
+</style>
+<div id="overlay">
+    <ul>
+        <li class="title">CHỌN</li>
+        <li><a style="text-decoration: none;color: white;" href="index.html">
+            <i class="fa-solid fa-house"></i> Trang chủ</a></li><br>
+        <li>
+            <button class="btn" id="btnA" type="button">
+            Feliz Navidad by José Feliciano
+            </button>
+        </li>
+        <li><button class="btn" id="btnB" type="button">Last Christmas</button></li>
+        <li><button class="btn" id="btnC" type="button">SANTA TELL ME - ARIANA GRANDE</button></li>
+        <li><button class="btn" id="btnD" type="button">nhạc tết :))</button></li>
+        <li class="separator">Hoặc</li>
+        <li>
+            <input type="file" id="upload" hidden />
+            <label for="upload">Tải file lên</label>
+        </li>
+    </ul>
+</div>
+<script src="assets/js/noel_music.js"></script>
