@@ -1,4 +1,11 @@
-
+/***********************/
+/***********************/
+/************************/
+/* Mixin para crear cubo ( Caras siempre al frente ) */
+/************************/
+/***********************/
+/***********************/
+/**/
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -7,13 +14,14 @@
     -webkit-tap-highlight-color: transparent;
 }
 /* Generic */
-.bodyradio {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-image: linear-gradient(120deg, #f6afbf, #f498ad, #f07390);
     cursor: pointer;
 }
 .face {
@@ -1321,4 +1329,3 @@
         transform: perspective(10000px) rotateX(53deg) rotateZ(33deg) scale(0.8) translateZ(-9vw);
    }
 }
-
